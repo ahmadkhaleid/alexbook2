@@ -202,7 +202,7 @@ window.addEventListener("scroll", ()=> {
   let scrollC = document.body.innerheight
   let scrollTop = document.body.scrollTop
 
-  if(scrollH *(0.1) <= Math.ceil(scrollC + scrollTop) ) {
+  if( 50 <=  scrollTop) ) {
     
     page++
     getPosts(false,page)
