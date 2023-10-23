@@ -196,11 +196,11 @@ function getPosts(empty = true, page = 1 ) {
 
   let page = 1 // to set page number counter
 
-window.addEventListener("scroll", ()=> {   
+window.addEventListener("touchmove", ()=> {   
    // to know when reach the end of current page and get another page of posts
-  let scrollH = document.documentElement.scrollHeight
-  let scrollC = window.innerheight
-  let scrollTop = document.documentElement.scrollTop
+  let scrollH = document.body.scrollHeight
+  let scrollC = document.body.innerheight
+  let scrollTop = document.body.scrollTop
 
   if(scrollH -100 <= Math.ceil(scrollC + scrollTop) ) {
     
