@@ -198,12 +198,11 @@ function getPosts(empty = true, page = 1 ) {
 
 window.addEventListener("scroll", ()=> {   
    // to know when reach the end of current page and get another page of posts
-  alert("sdsfsfs")
   let scrollH = document.body.scrollHeight
   let scrollC = document.body.innerheight
   let scrollTop = document.body.scrollTop
 
-  if(scrollH <= Math.ceil(scrollC + scrollTop) ) {
+  if(scrollH *(0.1) <= Math.ceil(scrollC + scrollTop) ) {
     
     page++
     getPosts(false,page)
